@@ -38,6 +38,7 @@ void jogarMao(Jogador *jogador1, Jogador *jogador2, int rodada, int mao);
 
 int main()
 {
+    srand(time(NULL));
     Carta zap;
     strcpy(zap.naipe, "Paus");
     zap.numero = 4;
@@ -60,7 +61,6 @@ int main()
     jogador2.maosGanhas = 0;
     jogador1.rodadasGanhas = 0;
     jogador2.rodadasGanhas = 0;
-    srand(time(NULL));
     printf("Bem-vindo ao jogo de Truco!\n");
 
     for (int contadorRodada = 1; contadorRodada <= 100; contadorRodada++)
